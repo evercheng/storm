@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="">
+<meta name="format-detection" content="telephone=no">
+<title>storm</title>
+<link rel="stylesheet" href="css/ggt.css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<link href="css/swiper.min.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.min.js"></script>
+<script src="js/slide.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/chinese.js"></script>
+<style>
+    .icon-menu{
+        font-size: 28px;
+        vertical-align: middle;
+        text-align: center;
+        top: 50%;
+        margin-top: -14px;
+        left: 50%;
+        margin-left: -15px;
+        position: absolute;
+    }
+    .text p{
+        margin-left: 20px;
+        font-family: PingFang SC
+    }
+</style>
+</head>
+<body ontouchstart> 
+<div class="page-header">
+	<div class="box flex">
+        <div class="logo">
+        	<a href="index.html">
+            	<img src="images/logo.png" />
+            </a>
+        </div>
+        <div class="page-nav pc">
+        	<ul class="flex">
+                <li>
+                    <a href="#" class="link arrow">CRM解决方案</a>
+                    <div class="pop" style="left:-0.5vw;">
+                        <a href="index.html">CRM实现顾客价值最大化</a>
+                        <a href="pageOne.html">专业团队提供权威服务解决方案</a>
+                        <a href="pageTwo.html">产品平台构建社交沟通整合</a>
+                        <a href="pageThree.html">行业应用及服务</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="link arrow">走进伺动</a>
+                    <div class="pop">
+                        <a href="about.html">关于我们</a>
+                        <a href="news.html">最新动态</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="contact.html" class="link arrow2">联系我们</a>
+                    <!--<div class="pop">
+                        <a href="#">心育前沿</a>
+                        <a href="#">心理辅导</a>
+                    </div>-->
+                </li>
+            </ul>
+            <div class="search wap" >
+                <input placeholder="search"/>
+                <button></button>
+            </div>
+        </div>
+        <div class="search pc" style="border-radius: 13px;position: relative;">
+        	<form action="" onsubmit="">
+            <input type="text" name="key" class="keyword" placeholder="search" />
+            <input type="submit" value="" style="width:20%; float:right;right: 8px;position: absolute;background:url(images/btn.svg) no-repeat center right; background-size:1.5vw 1.5vw;"/>
+            </form>
+        </div>
+        <div class="language">
+            <a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简</a>
+            <a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁</a> 
+           <a href="#">EN</a>
+       </div>
+        <div class="other pc">
+        	<a href="#">
+            	<img src="images/header-other-01.png" alt="" class="gray">
+            </a>
+            <a href="#">
+            	<img src="images/header-other-02.png" alt="" class="gray">
+            </a>
+            <a href="#">
+            	<img src="images/header-other-03.png" alt="" class="gray">
+            </a>
+        </div>
+        <div class="nav-show wap" id="wap">
+            <!-- <span class="iconfont icon-menu" id="icon-menu"></span> -->
+        </div>
+       <!-- <script>
+        var iconMent = document.getElementById('icon-menu');
+        var wap = document.getElementById('wap');
+        wap.onclick = function(){
+            if(iconMent.style.display=="none"){
+                iconMent.style.display='block' ;
+            }else{
+                iconMent.style.display='none';
+            }
+        }   
+    </script> -->
+    </div>
+</div>
+<div class="scheme-banner page-banner">
+	<div class="content">
+    	专业团队提供权威服务解决方案
+    </div>
+</div>
+<div class="scheme-box">
+	<div class="wrap">
+        <div class="item">
+        	<div class="pic">
+           	  <img src="images/scheme-box-01.jpg" alt="">
+            </div>
+            <div class="content">
+            	<h3>
+                	<p>CRM营销顾问服务团队</p>
+                    <p>Consultant</p>
+                </h3>
+                <span class="text">
+                	<P>累计近20年的实战经验，从会员制度、会员权益、沟通方式等模块的规划开始，到量身打造出专属会员方案、运营维护会员计划、收集会员意见回馈等，我们为顾客配置专属团队实时监控CRM方案的细节，助力品牌轻松建立会员群体。</P>
+                </span>
+            </div>
+        </div>
+        <div class="item">
+        	<div class="pic">
+           	  <img src="images/upfile/2020080740369205.png" alt="">
+            </div>
+            <div class="content">
+            	<h3>
+                	<p>顾客关系管理</p>
+                    <p>营销服务团队 PM</p>
+                </h3>
+                <span class="text">
+                	<P>负责处理CRM方案中「最后一里路」（last mile）的工作，提供CRM方案权益设计与交付，囊括会员计划专职服务、会员沟通方案规划与制定、会员兑换礼品的规划及执行等。</P>
+                </span>
+            </div>
+        </div>
+        <div class="item">
+        	<div class="pic">
+           	  <img src="images/upfile/2020080740343813.png" alt="">
+            </div>
+            <div class="content">
+            	<h3>
+                	<p>顾客智识与消费者行为</p>
+                    <p>研究团队 BI</p>
+                </h3>
+                <span class="text">
+                	<P>在为上百家企业提供干余份报告的基础之上，STORM已处理分析各种事务数据近百亿条。专业的分析能力搭配专业的分析工具，我们将为您提供多元化的分析服务,协助品牌深入了解每个会员的面貌，以便实施精准行销。</P>
+                </span>
+            </div>
+        </div>
+        <div class="item">
+        	<div class="pic">
+           	  <img src="images/upfile/2020080740314265.png" alt="">
+            </div>
+            <div class="content">
+            	<h3>
+                	<p>解决方案团队</p>
+                    <p>IT</p>
+                </h3>
+                <span class="text">
+                	<P>STORM自行开发的CRM营销平台系统架构，有着成熟、易扩展、易实施的特点能灵活地在此平台 上部署各种会员活动，同时还可以实现与会员间的一对一沟通，协助品牌实施精准营销，至今此平台可接入的系统已达数十种之多。</P>
+                </span>
+            </div>
+        </div>
+        <div class="item">
+        	<div class="pic">
+           	  <img src="images/upfile/2020080740283641.png" alt="">
+            </div>
+            <div class="content">
+            	<h3>
+                	<p>营销科技规划团队</p>
+                    <p>MT</p>
+                </h3>
+                <span class="text">
+                	<P>有着深厚的数据/IT背景的营销科技团队，可以将品牌在营销技术方面的需求转化为可行的实施方案，让产出的技术方案更加贴合品牌的业务要求，同时也让品牌能够清晰地了解到CRM方案在技术阶段的成型过程。</P>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page-footer">
+	<div class="wrap">
+        <div class="contact">
+            <div class="logo">
+            	<img src="images/footer-logo.png" />
+            </div>
+            <div class="address">
+                <P>上海市静安区北京西路1277号国旅大厦20层</P>
+              <P>北京市106敦化南路一段205号16楼1605室</P>
+            </div>
+            <div class="tel">
+            	&nbsp;
+            </div>
+        </div>
+        <div class="sitemap">
+            <dl>
+                <dt>
+                    CRM解决方案
+                </dt>
+                <dd>
+                    <p>
+                        <a href="pageFour.html">CRM实现顾客价值最大化</a>
+                    </p>
+                    <p>
+                        <a href="pageOne.html">专业团队提供权威服务解决方案</a>
+                    </p>
+                    <p>
+                        <a href="pageTwo.html">产品平台构建社交沟通整合</a>
+                    </p>
+                    <p>
+                        <a href="pageThree.html">行业应用及服务</a>
+                    </p>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    走进伺动
+                </dt>
+                <dd>
+                    <p>
+                        <a href="">关于我们</a>
+                    </p>
+                   <p>
+                        <a href="#">企业历程</a>
+                    </p>
+                    <p>
+                        <a href="#">最新动态</a>
+                    </p>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    联系我们
+                </dt>
+                <dd>
+                    <p>
+                        <a href="">加入我们</a>
+                    </p>
+                    <!-- <p>
+                        <a href="">台北/上海</a>
+                    </p>
+                    <p>
+                        <a href="">媒体矩阵</a>
+                    </p>
+                    <p>
+                        <a href="">专业渠道</a>
+                    </p> -->
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<div class="page-contact">
+    <div class="item">
+    	<a href="公司联系邮箱">
+            <div class="icon">
+            	<em></em>
+            </div>
+            <div class="box">
+                marketing@stormcrm.com
+            </div>
+        </a>
+    </div>
+    <div class="item">
+    	<a href="tel:联系电话">
+            <div class="icon">
+            	<em></em>
+            </div>
+            <div class="box">
+                021-612018301
+            </div>
+        </a>
+    </div>
+    <div class="item">
+    	<div class="icon">
+        	<em></em>
+        </div>
+        <div class="box">
+        	<img src="images/upfile/2020080737778109.jpg" />
+        </div>
+    </div>
+</div>
+<div class="page-gotop">
+	<img src="images/gotop.png" />
+</div>
+<script async src=""></script></body>
+</html>

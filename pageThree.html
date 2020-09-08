@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="css/ggt.css">
+<title>storm</title>
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<link href="css/swiper.min.css" rel="stylesheet" type="text/css">
+<script src="js/jquery.min.js"></script>
+<script src="js/slide.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/chinese.js"></script>
+<style>
+    .icon-menu{
+        font-size: 28px;
+        vertical-align: middle;
+        text-align: center;
+        top: 50%;
+        margin-top: -14px;
+        left: 50%;
+        margin-left: -15px;
+        position: absolute;
+    }
+</style>
+</head>
+<body ontouchstart> 
+<div class="page-header">
+	<div class="box flex">
+        <div class="logo">
+        	<a href="index.html">
+            	<img src="images/logo.png" />
+            </a>
+        </div>
+        <div class="page-nav pc">
+        	<ul class="flex">
+                <li>
+                    <a href="#" class="link arrow">CRM解决方案</a>
+                    <div class="pop" style="left:-0.5vw;">
+                        <a href="index.html">CRM实现顾客价值最大化</a>
+                        <a href="pageOne.html">专业团队提供权威服务解决方案</a>
+                        <a href="pageTwo.html">产品平台构建社交沟通整合</a>
+                        <a href="pageThree.html">行业应用及服务</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="link arrow">走进伺动</a>
+                    <div class="pop">
+                        <a href="about.html">关于我们</a>
+                        <a href="news.html">最新动态</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="contact.html" class="link arrow2">联系我们</a>
+                    <!--<div class="pop">
+                        <a href="#">心育前沿</a>
+                        <a href="#">心理辅导</a>
+                    </div>-->
+                </li>
+            </ul>
+            <div class="search wap">
+                <input placeholder="search"/>
+                <button></button>
+            </div>
+        </div>
+        <div class="search pc" style="border-radius: 13px;position: relative;">
+        	<form action="" onsubmit="" >
+            <input type="text" name="key" class="keyword" placeholder="search" />
+            <input type="submit" value="" style="width:20%; float:right;right: 8px;position: absolute;background:url(images/btn.svg) no-repeat center right; background-size:1.5vw 1.5vw;"/>
+            </form>
+        </div>
+        <div class="language">
+            <a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简</a>
+            <a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁</a> 
+           <a href="#">EN</a>
+       </div>
+        <div class="other pc">
+        	<a href="#">
+            	<img src="images/header-other-01.png" alt="" class="gray">
+            </a>
+            <a href="#">
+            	<img src="images/header-other-02.png" alt="" class="gray">
+            </a>
+            <a href="#">
+            	<img src="images/header-other-03.png" alt="" class="gray">
+            </a>
+        </div>
+        <div class="nav-show wap" id="wap">
+            <!-- <span class="iconfont icon-menu" id="icon-menu"></span> -->
+        </div>
+        <!-- <script>
+            var iconMent = document.getElementById('icon-menu');
+            var wap = document.getElementById('wap');
+            wap.onclick = function(){
+                if(iconMent.style.display=="none"){
+                    iconMent.style.display='block' ;
+                }else{
+                    iconMent.style.display='none';
+                }
+            }   
+        </script> -->
+    </div>
+</div>
+<div class="service-banner page-banner">
+	<div class="content">
+    	行业应用及服务
+    </div>
+</div>
+<div class="service-box">
+	<div class="wrap">
+        <div class="item">
+            <div class="title">
+            	<h2>美妆行业</h2>
+            </div>
+            <div class="list">
+            	<ul class="flex">
+                	<li>
+                    	<em><img src="images/service/01.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/02.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/03.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/04.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/05.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/06.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/07.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/08.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/09.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/10.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/11.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/12.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/13.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/14.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/15.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/16.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/17.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/18.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/19.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/20.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/21.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/22.jpg" /></em>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="item">
+            <div class="title">
+            	<h2>快消行业</h2>
+            </div>
+            <div class="list">
+            	<ul class="flex">
+                	<li>
+                    	<em><img src="images/service/23.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/24.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/25.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/26.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/27.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/28.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/29.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/30.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/31.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/32.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/33.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/34.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/35.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/36.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/37.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/38.jpg" /></em>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="item">
+            <div class="title">
+            	<h2>零售行业</h2>
+            </div>
+            <div class="list">
+            	<ul class="flex">
+                	<li>
+                    	<em><img src="images/service/39.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/40.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/41.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/42.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/43.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/44.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/45.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/46.jpg" /></em>
+                    </li>
+            	</ul>
+            </div>
+        </div>
+        <div class="item">
+            <div class="title">
+            	<h2>奢侈品行业</h2>
+            </div>
+            <div class="list">
+            	<ul class="flex">
+                	<li>
+                    	<em><img src="images/service/47.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/48.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/49.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/50.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/51.jpg" /></em>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="item">
+            <div class="title">
+            	<h2>其他行业</h2>
+            </div>
+            <div class="list">
+            	<ul class="flex">
+                	<li>
+                    	<em><img src="images/service/52.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/53.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/54.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/55.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/56.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/57.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/58.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/59.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/60.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/61.jpg" /></em>
+                    </li>
+                	<li>
+                    	<em><img src="images/service/62.jpg" /></em>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page-column">
+	<h2>成功案例</h2>
+</div>
+<div class="service-case flex ">
+    <div class="item">
+        <div class="show">
+            <img src="images/ad/20.jpg" />
+        </div>
+        <div class="hide">
+            <span class="logo">
+            	<img src="images/ad/21.png" />
+            </span>
+            <span class="showCase">
+            	获取完整案例
+            </span>
+        </div>
+    </div>
+    <div class="item">
+        <div class="show">
+            <img src="images/ad/19.jpg" />
+        </div>
+        <div class="hide">
+            <span class="logo">
+            	<img src="images/ad/21.png" />
+            </span>
+            <span class="showCase">
+            	获取完整案例
+            </span>
+        </div>
+    </div>
+    <div class="item">
+        <div class="show">
+            <img src="images/ad/18.jpg" />
+        </div>
+        <div class="hide">
+            <span class="logo">
+            	<img src="images/ad/21.png" />
+            </span>
+            <span class="showCase">
+            	获取完整案例
+            </span>
+        </div>
+    </div>
+    <div class="item">
+        <div class="show">
+            <img src="images/ad/17.jpg" />
+        </div>
+        <div class="hide">
+            <span class="logo">
+            	<img src="images/ad/21.png" />
+            </span>
+            <span class="showCase">
+            	获取完整案例
+            </span>
+        </div>
+    </div>
+</div>
+<div class="service-case wap">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="item">
+                    <div class="show">
+                        <img src="images/ad/17.jpg" />
+                    </div>
+                    <div class="hide">
+                        <span class="logo">
+                            <img src="images/ad/21.png" />
+                        </span>
+                        <span class="showCase">
+                            获取完整案例
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="item">
+                    <div class="show">
+                        <img src="images/ad/18.jpg" />
+                    </div>
+                    <div class="hide">
+                        <span class="logo">
+                            <img src="images/ad/21.png" />
+                        </span>
+                        <span class="showCase">
+                            获取完整案例
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="item">
+                    <div class="show">
+                        <img src="images/ad/19.jpg" />
+                    </div>
+                    <div class="hide">
+                        <span class="logo">
+                            <img src="images/ad/21.png" />
+                        </span>
+                        <span class="showCase">
+                            获取完整案例
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="item">
+                    <div class="show">
+                        <img src="images/ad/20.jpg" />
+                    </div>
+                    <div class="hide">
+                        <span class="logo">
+                            <img src="images/ad/21.png" />
+                        </span>
+                        <span class="showCase">
+                            获取完整案例
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>
+<div class="pop-back"></div>
+<div class="pop-box">
+	<div class="column">
+    	<h3>获取更多案例</h3>
+        <span class="close">
+        	<img src="images/close.svg" alt="">
+        </span>
+    </div>
+    <div class="list">
+    	<ul>
+        	<li>
+            	<span class="title">
+                	姓名
+                </span>
+                <span class="input">
+                	<input type="text">
+                </span>
+            </li>
+            <li>
+            	<span class="title">
+                	手机
+                </span>
+                <span class="input">
+                	<input type="text">
+                </span>
+            </li>
+            <li>
+            	<span class="title">
+                	公司名称
+                </span>
+                <span class="input">
+                	<input type="text">
+                </span>
+            </li>
+            <li>
+            	<span class="title">
+                	公司邮箱
+                </span>
+                <span class="input">
+                	<input type="text">
+                </span>
+            </li>
+            <li>
+            	<span class="title">
+                	职位
+                </span>
+                <span class="input">
+                	<input type="text">
+                </span>
+            </li>
+        </ul>
+    </div>
+    <div class="btn">
+    	<span class="tel">
+        	联系我们：400-123-1234
+        </span>
+        <span class="button">
+        	<button>发送</button>
+        </span>
+    </div>
+</div>
+<div class="page-footer">
+	<div class="wrap">
+        <div class="contact">
+            <div class="logo">
+            	<img src="images/footer-logo.png" />
+            </div>
+            <div class="address">
+                <P>上海市静安区北京西路1277号国旅大厦20层</P>
+              <P>北京市106敦化南路一段205号16楼1605室</P>
+            </div>
+            <div class="tel">
+            	&nbsp;
+            </div>
+        </div>
+        <div class="sitemap">
+            <dl>
+                <dt>
+                    CRM解决方案
+                </dt>
+                <dd>
+                    <p>
+                        <a href="pageFour.html">CRM实现顾客价值最大化</a>
+                    </p>
+                    <p>
+                        <a href="pageOne.html">专业团队提供权威服务解决方案</a>
+                    </p>
+                    <p>
+                        <a href="pageTwo.html">产品平台构建社交沟通整合</a>
+                    </p>
+                    <p>
+                        <a href="pageThree.html">行业应用及服务</a>
+                    </p>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    走进伺动
+                </dt>
+                <dd>
+                    <p>
+                        <a href="">关于我们</a>
+                    </p>
+                   <p>
+                        <a href="#">企业历程</a>
+                    </p>
+                    <p>
+                        <a href="#">最新动态</a>
+                    </p>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    联系我们
+                </dt>
+                <dd>
+                    <p>
+                        <a href="">加入我们</a>
+                    </p>
+                    <!-- <p>
+                        <a href="">台北/上海</a>
+                    </p>
+                    <p>
+                        <a href="">媒体矩阵</a>
+                    </p>
+                    <p>
+                        <a href="">专业渠道</a>
+                    </p> -->
+                </dd>
+            </dl>
+        </div>
+    </div>
+</div>
+<div class="page-contact">
+    <div class="item">
+    	<a href="公司联系邮箱">
+            <div class="icon">
+            	<em></em>
+            </div>
+            <div class="box">
+                marketing@stormcrm.com
+            </div>
+        </a>
+    </div>
+    <div class="item">
+    	<a href="tel:联系电话">
+            <div class="icon">
+            	<em></em>
+            </div>
+            <div class="box">
+                021-612018301
+            </div>
+        </a>
+    </div>
+    <div class="item">
+    	<div class="icon">
+        	<em></em>
+        </div>
+        <div class="box">
+        	<img src="images/upfile/2020080737778109.jpg" />
+        </div>
+    </div>
+</div>
+<div class="page-gotop">
+	<img src="images/gotop.png" />
+</div>
+<script>
+	$(".showCase").click(function(){
+		$(".pop-back").show();
+		$(".pop-box").show();
+		$("body").addClass("hidden");
+	})
+	$(".pop-box .column .close").click(function(){
+		$(".pop-back").hide();
+		$(".pop-box").hide();
+		$("body").removeClass("hidden");
+	})
+</script>
+<script>
+	// 成功案例
+	var swiper = new Swiper('.service-case .swiper-container', {
+		spaceBetween: 0,
+		centeredSlides: true,
+		autoplay: {
+		delay: 2500,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: '.service-case .swiper-pagination',
+			clickable: true,
+		},
+		navigation: {
+			nextEl: '.service-case .swiper-button-next',
+			prevEl: '.service-case .swiper-button-prev',
+		},
+	});
+</script>
+<script async src=""></script></body>
+</html>

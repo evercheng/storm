@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="">
+  <meta name="format-detection" content="telephone=no">
+  <title>storm</title>
+  <link href="css/index.css" rel="stylesheet" type="text/css">
+  <link href="css/swiper.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/ggt.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/chinese.js"></script>
+  <script src="js/slide.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/index.js"></script>
+  <!-- <script type="text/javascript" src="js/api.js"></script> -->
+  <!-- <script type="text/javascript" src="https://api.map.baidu.com/api?key=&v=1.1&services=true"></script> -->
+</head>
+<style>
+  .dizhi,
+  .dizhi1 {
+    width: 340px;
+    height: 181px;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    font-family: 'PingFang SC';
+    /* font-weight: 600; */
+    box-shadow: 0 0.156vw 0.417vw #f5f5f5;
+  }
+
+  .dizhi {
+    top: 159px;
+    left: 493px;
+    display: block;
+  }
+
+  .dizhi1 {
+    top: 62px;
+    right: -43px;
+    /* display: block; */
+  }
+
+  .dizhi h3,
+  .dizhi1 h3 {
+    margin-left: 25px;
+    margin-top: 25px;
+    font-family: 'PingFang medium';
+    font-size: 27px;
+  }
+
+  .dizhi p,
+  .dizhi1 p {
+    height: 25px;
+    margin-left: 25px;
+    color: gray;
+    font-size: 17px;
+    font-family: 'PingFang regular';
+    font-size: 20px;
+    margin-top: 5px;
+  }
+
+  .dizhi span,
+  .dizhi1 span {
+    height: 167px;
+    margin-left: 25px;
+    margin-top: 10px;
+    color: gray;
+    font-size: 14px;
+    font-family: 'arial regular';
+    font-size: 15px;
+  }
+</style>
+
+<body ontouchstart>
+
+  <!-- 头部 -->
+  <div class="page-header">
+    <div class="box flex">
+
+      <!-- logo -->
+      <div class="logo">
+        <a href="/">
+          <img src="images/logo.png" />
+        </a>
+      </div>
+      <!-- logo -->
+
+      <!-- 导航 -->
+      <div class="page-nav pc">
+
+        <!-- ul -->
+        <ul class="flex">
+          <li>
+            <a href="#" class="link arrow">CRM解决方案</a>
+            <div class="pop" style="left:-0.5vw;">
+              <a href="pageFour.html">CRM实现顾客价值最大化</a>
+              <a href="pageOne.html">专业团队提供权威服务解决方案</a>
+              <a href="pageTwo.html">产品平台构建社交沟通整合</a>
+              <a href="pageThree.html">行业应用及服务</a>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="link arrow">走进伺动</a>
+            <div class="pop">
+              <a href="about.html">关于我们</a>
+              <a href="news.html">最新动态</a>
+            </div>
+          </li>
+          <li>
+            <a href="contact.html" class="link arrow2">联系我们</a>
+          </li>
+        </ul>
+        <!-- ul -->
+
+        <!-- search -->
+        <div class="search wap">
+          <input placeholder="search" />
+          <button></button>
+        </div>
+        <!-- search -->
+
+      </div>
+      <!-- 导航 -->
+
+      <!-- search -->
+      <div class="search pc" style="border-radius: 13px;position: relative;">
+        <form action="" onsubmit="">
+          <input type="text" name="key" class="keyword" placeholder="search" />
+          <!--<input style="width:20%; float:right;" type="image" src="images/search-btn.svg" />-->
+          <input type="submit" value=""
+            style="width:20%; float:right;background:url(images/btn.svg) no-repeat center right;right: 8px;position: absolute; background-size:1.5vw 1.5vw;" />
+        </form>
+        <!--<button></button>-->
+      </div>
+      <!-- search -->
+
+      <!-- 语言 -->
+      <div class="language">
+        <a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简</a>
+        <a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁</a>
+        <a href="#">EN</a>
+      </div>
+      <!-- 语言 -->
+
+      <!-- 其他 -->
+      <div class="other pc">
+        <a href="#">
+          <img src="images/header-other-01.png" alt="" class="gray">
+        </a>
+        <a href="#">
+          <img src="images/header-other-02.png" alt="" class="gray">
+        </a>
+        <a href="#">
+          <img src="images/header-other-03.png" alt="" class="gray">
+        </a>
+      </div>
+      <!-- 其他 -->
+
+      <!-- 汉堡 -->
+      <div class="nav-show wap">
+      </div>
+      <!-- 汉堡 -->
+
+    </div>
+  </div>
+  <!-- 头部 -->
+
+  <!-- banner -->
+  <div class="contact-banner page-banner">
+    <div class="content"> 联系我们 </div>
+  </div>
+  <!-- banner -->
+
+  <!-- 栏目 -->
+  <div class="page-column">
+    <h2>办公地址</h2>
+  </div>
+  <!-- 栏目 -->
+
+  <!-- 地图 -->
+  <div class="contact-maps pc" style="height:40vw;">
+    <div style="width:79.688vw;height:40vw;background-image: url(images/ditu.png); position: relative; margin:0 auto"
+      id="map">
+      <!-- <img src="images/ditu.png" alt=""> -->
+      <!-- 上海 -->
+      <span class="biao" id="biao" title="上海"
+        style="background-image: url(images/di-biao.svg);width: 30px;height: 32px;cursor: pointer; top: 270px;right:272px;position: absolute;"></span>
+      <!-- 北京 -->
+      <span class="biao" id="biao1" title="北京"
+        style="background-image: url(images/di-biao.svg);width: 30px;height: 32px;cursor: pointer; top: 232px;right:277px;position: absolute;"></span>
+      <!-- 香港 -->
+      <span class="biao" id="biao2" title="香港"
+        style="background-image: url(images/di-biao.svg);width: 30px;height: 32px;cursor: pointer; top: 302px;right:282px;position: absolute;"></span>
+      <!-- 北京 -->
+      <div class="dizhi1" id="dizhi1">
+        <h3>北京</h3>
+        <p style="margin-top: 10px;">北京市东城区</p>
+        <p>北京市东城区月牙胡同33号</p>
+        <span>T:86-21-6120-1830&nbsp;&nbsp;F:86-21-6120-1833</span>
+      </div>
+      <!-- 香港 -->
+      <!-- <div class="dizhi2" id="dizhi2">
+        <h3>香港</h3>
+        <p style="margin-top: 16px;">上海市静安区</p>
+        <p>北京西路1277号国旅大厦20层</p>
+        <span>T:86-21-6120-1830&nbsp;&nbsp;F:86-21-6120-1833</span>
+      </div> -->
+      <!-- 上海 -->
+      <div class="dizhi" id="dizhi">
+        <h3>上海</h3>
+        <p style="margin-top: 10px;">上海市静安区</p>
+        <p>北京西路1277号国旅大厦20层</p>
+        <span>T:86-21-6120-1830&nbsp;&nbsp;F:86-21-6120-1833</span>
+      </div>
+      <script>
+        var biao = document.getElementById('biao');
+        var dizhi = document.getElementById('dizhi');
+        var biao1 = document.getElementById('biao1');
+        var dizhi1 = document.getElementById('dizhi1');
+        biao.onclick = function () {
+          if (dizhi.style.display == "none") {
+            dizhi.style.display = 'block';
+          } else {
+            dizhi.style.display = 'none';
+          }
+        }
+        biao1.onclick = function () {
+          if (dizhi1.style.display == "none") {
+            dizhi1.style.display = 'block';
+          } else {
+            dizhi1.style.display = 'none';
+          }
+        }
+        // biao2.onclick = function () {
+        //   if (dizhi2.style.display == "none") {
+        //     dizhi2.style.display = 'block';
+        //   } else {
+        //     dizhi2.style.display = 'none';
+        //   }
+        // }   
+      </script>
+    </div>
+
+
+    <!-- 
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+      createMap();//创建地图
+      setMapEvent();//设置地图事件
+      addMapControl();//向地图添加控件
+      addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){ 
+      map = new BMap.Map("map"); 
+      map.centerAndZoom(new BMap.Point(116.417189,39.916579),5);
+    }
+    function setMapEvent(){
+      //map.enableScrollWheelZoom();
+      //map.enableKeyboard();
+      //map.enableDragging();
+      //map.enableDoubleClickZoom()
+	  map.disableDragging();     //禁止拖拽
+	  map.disableDoubleClickZoom();   //禁用双击放大
+    }
+    function addClickHandler(target,window){
+      target.addEventListener("click",function(){
+        target.openInfoWindow(window);
+      });
+    }
+    function addMapOverlay(){
+      var markers = [
+        {content:"上海市公司地址",title:"STORM上海",imageOffset: {width:0,height:3},position:{lat:31.234997,lng:121.457663}},
+        {content:"北京市公司地址",title:"STORM台北",imageOffset: {width:0,height:3},position:{lat:25.044045,lng:121.559087}},
+		    {content:"",title:"STORM香港",imageOffset: {width:0,height:3},position:{lat:22.389885,lng:114.142551}},
+		    {content:"北京市东城区月牙胡同33号",title:"STORM北京",imageOffset: {width:0,height:3},position:{lat:39.935752,lng:116.425933}}
+		 
+      ];
+      for(var index = 0; index < markers.length; index++ ){
+        var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+        var marker = new BMap.Marker(point,{icon:new BMap.Icon("images/map.png",new BMap.Size(20,25),{
+          imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+        })});
+        var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+        var opts = {
+          width: 200,
+          title: markers[index].title,
+          enableMessage: false
+        };
+        var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+        marker.setLabel(label);
+        addClickHandler(marker,infoWindow);
+        map.addOverlay(marker);
+		 label.setStyle({
+
+                        borderColor:"#808080",
+
+                        color:"#333",
+
+                        cursor:"pointer"
+
+            });
+			
+			map.openInfoWindow(infoWindow, map.getCenter());      // 打开信息窗口
+      };
+    }
+    //向地图添加控件
+    function addMapControl(){
+      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+      scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+      map.addControl(scaleControl);
+      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+      map.addControl(navControl);
+      var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:false});
+      map.addControl(overviewControl);
+    }
+    var map;
+      initMap();
+	  
+	  
+	  	// map.setMapStyleV2({     
+      //   styleId: '157a4e992ba06e96e2acb824a5ad5d58'
+      //   });
+		
+  </script> -->
+
+
+
+
+  </div>
+
+
+
+
+
+  <!-- 地图 -->
+
+
+  <!-- 地图 -->
+  <div class="contact-maps wap">
+    <div class="wrap">
+      <div class="map">
+
+        <!-- 上海 -->
+        <div class="area shanghai"></div>
+        <!-- 上海 -->
+
+        <!-- 台湾 -->
+        <div class="area taiwan"></div>
+        <!-- 台湾 -->
+
+        <!-- 内容: 上海 -->
+        <div class="content shanghai">
+          <h3>上海</h3>
+          <span class="text">
+            <p>上海市静安区</p>
+            <p>北京西路1277号国旅大厦20层</p>
+          </span>
+          <span class="tel">
+            <p>T:86-21-6120-1830</p>
+            <p>F:86-21-6120-1833</p>
+          </span>
+        </div>
+        <!-- 内容: 上海 -->
+
+        <!-- 内容: 台湾 -->
+        <div class="content taiwan">
+          <h3>台北</h3>
+          <span class="text">
+            <p>台北市106大安区</p>
+            <p>敦化南路一段205号16楼1605室</p>
+          </span>
+          <span class="tel">
+            <p>T:866-2-2740-3886</p>
+            <p>F:866-2-2740-3940</p>
+          </span>
+        </div>
+        <!-- 内容: 台湾 -->
+
+
+      </div>
+    </div>
+  </div>
+  <!-- 地图 -->
+
+
+  <!-- 栏目 -->
+  <div class="page-column">
+    <h2>社交媒体</h2>
+  </div>
+  <!-- 栏目 -->
+
+  <!-- 社交媒体 pc -->
+  <div class="contact-media pc">
+    <div class="wrap flex">
+
+
+
+      <!-- item -->
+      <div class="item pic">
+
+        <!-- show -->
+        <div class="show page-flip"> <span class="icon"> <img src="images/contact-way-02.png" alt=""> </span> <span
+            class="title"> 微博 </span> </div>
+        <!-- show -->
+
+        <!-- hide -->
+        <div class="hide  page-flip">
+          <!--<div class="qrcode">
+                	<img src="images/ad/16.jpg" alt="">
+                </div>-->
+          <span class="icon"> <img src="images/contact-way-02.png" alt=""> </span> <span class="text">
+            <p>全球知名职场社交平台</p>
+          </span> <span class="more"> <a target="_blank" href="https://weibo.com/">查看更多></a> </span> </div>
+        <!-- hide -->
+
+      </div>
+      <!-- item -->
+
+
+
+
+
+      <!-- item -->
+      <div class="item pic">
+
+        <!-- show -->
+        <div class="show page-flip">
+          <div class="box"> <span class="icon"> <img src="images/contact-way-05.png" alt=""> </span> <span
+              class="title"> 推特 </span> </div>
+        </div>
+        <!-- show -->
+
+        <!-- hide -->
+        <div class="hide page-flip">
+          <div class="qrcode"> <img src="images/ad/16.jpg" alt=""> </div>
+        </div>
+        <!-- hide -->
+
+      </div>
+      <!-- item -->
+
+
+
+      <!-- item -->
+      <div class="item pic">
+
+        <!-- show -->
+        <div class="show page-flip">
+          <div class="box"> <span class="icon"> <img src="images/contact-way-05.png" alt=""> </span> <span
+              class="title"> 微信 </span> </div>
+        </div>
+        <!-- show -->
+
+        <!-- hide -->
+        <div class="hide page-flip">
+          <div class="qrcode"> <img src="images/ad/16.jpg" alt=""> </div>
+        </div>
+        <!-- hide -->
+
+      </div>
+      <!-- item -->
+
+
+
+    </div>
+  </div>
+  <!-- 社交媒体 pc -->
+
+  <!-- 社交媒体 wap -->
+  <div class="contact-media wap">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+
+        <!-- item -->
+        <div class="swiper-slide">
+          <div class="item dep">
+            <!-- show -->
+            <div class="show"> <span class="icon"> <img src="images/contact-way-01.png" alt=""> </span> <span
+                class="title"> 微信 </span> <span class="text">
+                <p>全球知名</p>
+                <p>职场社交平台</p>
+              </span> <span class="more"> <a href="">查看更多></a> </span> </div>
+            <!-- show -->
+
+            <!-- hide -->
+            <div class="hide">
+              <div class="qrcode"> <img src="images/ad/16.jpg" alt=""> </div>
+            </div>
+            <!-- hide -->
+          </div>
+        </div>
+        <!-- item -->
+
+        <!-- item -->
+        <div class="swiper-slide">
+          <div class="item dep">
+
+            <!-- show -->
+            <div class="show"> <span class="icon"> <img src="images/contact-way-02.png" alt=""> </span> <span
+                class="title"> 微博 </span> <span class="text">
+                <p>全球知名</p>
+                <p>职场社交平台</p>
+              </span> <span class="more"> <a href="">查看更多></a> </span> </div>
+            <!-- show -->
+
+            <!-- hide -->
+            <div class="hide">
+              <div class="qrcode"> <img src="images/ad/16.jpg" alt=""> </div>
+            </div>
+            <!-- hide -->
+
+          </div>
+        </div>
+        <!-- item -->
+
+        <!-- item -->
+        <div class="swiper-slide">
+          <div class="item dep">
+
+            <!-- show -->
+            <div class="show"> <span class="icon"> <img src="images/contact-way-03.png" alt=""> </span> <span
+                class="title"> 领英 </span> <span class="text">
+                <p>全球知名</p>
+                <p>职场社交平台</p>
+              </span> <span class="more"> <a href="">查看更多></a> </span> </div>
+            <!-- show -->
+
+          </div>
+        </div>
+        <!-- item -->
+
+        <!-- item -->
+        <div class="swiper-slide">
+          <div class="item dep">
+
+            <!-- show -->
+            <div class="show"> <span class="icon"> <img src="images/contact-way-04.png" alt=""> </span> <span
+                class="title"> 脸书 </span> <span class="text">
+                <p>一个联系朋友的</p>
+                <p>社交工具</p>
+              </span> <span class="more"> <a href="">查看更多></a> </span> </div>
+            <!-- show -->
+
+            <!-- hide -->
+            <div class="hide">
+              <div class="qrcode"> <img src="images/ad/16.jpg" alt=""> </div>
+            </div>
+            <!-- hide -->
+
+          </div>
+        </div>
+        <!-- item -->
+
+        <!-- item -->
+        <div class="swiper-slide">
+          <div class="item dep">
+
+            <!-- show -->
+            <div class="show"> <span class="icon"> <img src="images/contact-way-05.png" alt=""> </span> <span
+                class="title"> 推特 </span> <span class="text">
+                <p>世界最主流</p>
+                <p>新锐的微博客</p>
+              </span> <span class="more"> <a href="">查看更多></a> </span> </div>
+            <!-- show -->
+
+            <!-- hide -->
+            <div class="hide">
+              <div class="qrcode"> <img src="images/ad/16.jpg" alt=""> </div>
+            </div>
+            <!-- hide -->
+
+          </div>
+        </div>
+        <!-- item -->
+
+      </div>
+      <!-- Add Pagination -->
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+  <!-- 社交媒体 wap -->
+
+  <!-- 底部 -->
+  <div class="page-footer">
+    <div class="wrap">
+
+      <!-- contact -->
+      <div class="contact">
+
+        <!-- logo -->
+        <div class="logo">
+          <img src="images/footer-logo.png" />
+        </div>
+        <!-- logo -->
+
+        <!-- address -->
+        <div class="address">
+          <!--<P>伺动常客公共关系咨询(上海)有限公司</P>-->
+          <P>上海市静安区北京西路1277号国旅大厦20层</P>
+          <P>北京市106敦化南路一段205号16楼1605室</P>
+        </div>
+        <!-- address -->
+
+        <!-- tel -->
+        <div class="tel">
+          &nbsp;
+        </div>
+        <!-- tel -->
+
+      </div>
+      <!-- contact -->
+
+      <!-- sitemap -->
+      <div class="sitemap">
+        <dl>
+          <dt>
+            CRM解决方案
+          </dt>
+          <dd>
+            <p>
+              <a href="pageFour.html">CRM实现顾客价值最大化</a>
+            </p>
+            <p>
+              <a href="pageOne.html">专业团队提供权威服务解决方案</a>
+            </p>
+            <p>
+              <a href="pageTwo.html">产品平台构建社交沟通整合</a>
+            </p>
+            <p>
+              <a href="pageThree.html">行业应用及服务</a>
+            </p>
+          </dd>
+        </dl>
+
+        <dl>
+          <dl>
+            <dt>
+              走进伺动
+            </dt>
+            <dd>
+              <p>
+                <a href="">关于我们</a>
+              </p>
+              <p>
+                <a href="#">企业历程</a>
+              </p>
+              <p>
+                <a href="#">最新动态</a>
+              </p>
+            </dd>
+          </dl>
+        </dl>
+        <dl>
+          <dt>
+            联系我们
+          </dt>
+          <dd>
+            <p>
+              <a href="">加入我们</a>
+            </p>
+            <!-- <p>
+                      <a href="">台北/上海</a>
+                  </p>
+                  <p>
+                      <a href="">媒体矩阵</a>
+                  </p>
+                  <p>
+                      <a href="">专业渠道</a>
+                  </p> -->
+          </dd>
+        </dl>
+
+      </div>
+      <!-- sitemap -->
+
+    </div>
+  </div>
+  <!-- 底部 -->
+
+
+  <!-- 联系 -->
+  <div class="page-contact">
+
+    <!-- item -->
+    <div class="item">
+      <a href="公司联系邮箱">
+        <div class="icon">
+          <em></em>
+        </div>
+        <div class="box">
+          marketing@stormcrm.com
+        </div>
+      </a>
+    </div>
+    <!-- item -->
+
+    <!-- item -->
+    <div class="item">
+      <a href="tel:联系电话">
+        <div class="icon">
+          <em></em>
+        </div>
+        <div class="box">
+          021-612018301
+        </div>
+      </a>
+    </div>
+    <!-- item -->
+
+    <!-- item -->
+    <div class="item">
+      <div class="icon">
+        <em></em>
+      </div>
+      <div class="box">
+
+        <img src="images/upfile/2020080737778109.jpg" />
+
+      </div>
+    </div>
+    <!-- item -->
+
+  </div>
+  <!-- 联系 -->
+
+
+  <!-- 返回顶部 -->
+  <div class="page-gotop">
+    <img src="images/gotop.png" />
+  </div>
+  <!-- 返回顶部 -->
+  <script>
+
+    // 社交媒体
+    var swiper = new Swiper('.contact-media .swiper-container', {
+      spaceBetween: 0,
+      centeredSlides: true,
+      pagination: {
+        el: '.contact-media .swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.contact-media .swiper-button-next',
+        prevEl: '.contact-media .swiper-button-prev',
+      },
+    });
+
+  </script>
+</body>
+
+</html>
